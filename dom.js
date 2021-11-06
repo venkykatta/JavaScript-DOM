@@ -30,5 +30,42 @@
 // input.value = 'Hi Venky!!';
 
 
-var titles = document.querySelectorAll('.title');
-console.log(titles)
+// var titles = document.querySelectorAll('.title');
+// console.log(titles)
+
+var itemList = document.querySelector('#items');
+
+// console.log(itemList.parentNode.parentNode.parentNode);
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.background = '#f4f4f4';
+
+//parent Element
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentElement.parentElement.parentElement);
+
+// console.log(itemList.childNodes);
+
+// console.log(itemList.firstChild);
+// console.log(itemList.firstElementChild);
+
+// console.log(itemList.nextSibling);
+// console.log(itemList.nextElementSibling);
+
+// console.log(itemList.previousElementSibling);
+// console.log(itemList.previousSibling);
+
+// create div
+var newDiv = document.createElement('div');
+newDiv.className = 'hello';
+newDiv.id = 'helloo';
+newDiv.setAttribute('title', 'Hello Div');
+
+var newDivText = document.createTextNode("Hello venky!");
+newDiv.appendChild(newDivText);
+
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header h1');
+console.log(newDiv);
+
+container.insertBefore(newDiv, h1);
